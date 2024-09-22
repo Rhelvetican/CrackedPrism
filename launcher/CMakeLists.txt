@@ -439,6 +439,8 @@ set(JAVA_SOURCES
     java/download/ArchiveDownloadTask.h
     java/download/ManifestDownloadTask.cpp
     java/download/ManifestDownloadTask.h
+    java/download/SymlinkTask.cpp
+    java/download/SymlinkTask.h
 
     ui/java/InstallJavaDialog.h
     ui/java/InstallJavaDialog.cpp
@@ -842,6 +844,10 @@ SET(LAUNCHER_SOURCES
     ui/setupwizard/PasteWizardPage.h
     ui/setupwizard/ThemeWizardPage.cpp
     ui/setupwizard/ThemeWizardPage.h
+    ui/setupwizard/AutoJavaWizardPage.cpp
+    ui/setupwizard/AutoJavaWizardPage.h
+    ui/setupwizard/LoginWizardPage.cpp
+    ui/setupwizard/LoginWizardPage.h
 
     # GUI - themes
     ui/themes/FusionTheme.cpp
@@ -1154,6 +1160,8 @@ endif()
 qt_wrap_ui(LAUNCHER_UI
     ui/MainWindow.ui
     ui/setupwizard/PasteWizardPage.ui
+    ui/setupwizard/AutoJavaWizardPage.ui
+    ui/setupwizard/LoginWizardPage.ui
     ui/setupwizard/ThemeWizardPage.ui
     ui/pages/global/AccountListPage.ui
     ui/pages/global/JavaPage.ui
